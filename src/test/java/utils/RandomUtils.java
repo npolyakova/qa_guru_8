@@ -61,26 +61,22 @@ public class RandomUtils {
         int cityIndex;
 
         switch (stateIndex) {
-            case (0) -> {
+            case 0:
                 cityIndex = getRandomInt(0, ncrCities.length - 1);
                 stateAndCity[0]=states[stateIndex];
                 stateAndCity[1]=ncrCities[cityIndex];
-            }
-            case (1) -> {
+            case 1:
                 cityIndex = getRandomInt(0, upCities.length - 1);
                 stateAndCity[0]=states[stateIndex];
                 stateAndCity[1]=upCities[cityIndex];
-            }
-            case (2) -> {
+            case 2:
                 cityIndex = getRandomInt(0, harCities.length - 1);
                 stateAndCity[0]=states[stateIndex];
                 stateAndCity[1]=harCities[cityIndex];
-            }
-            case (3) -> {
+            case 3:
                 cityIndex = getRandomInt(0, rajCities.length - 1);
                 stateAndCity[0]=states[stateIndex];
                 stateAndCity[1]=rajCities[cityIndex];
-            }
         }
 
         return stateAndCity;

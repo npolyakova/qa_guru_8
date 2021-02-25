@@ -43,9 +43,3 @@ tasks.withType(Test) {
 test {
     useJUnitPlatform()
 }
-
-task negative_tests(type: Test) {
-    useJUnitPlatform {
-        includeTags 'negative'
-    }
-}
