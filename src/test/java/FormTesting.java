@@ -1,6 +1,5 @@
 import com.codeborne.selenide.Condition;
 import com.github.javafaker.Faker;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
