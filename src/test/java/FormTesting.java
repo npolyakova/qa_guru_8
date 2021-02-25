@@ -14,7 +14,6 @@ public class FormTesting {
 
     @Test //Успешное заполнение формы
     void formFillingWithCorrectData(){
-        open("https://demoqa.com/automation-practice-form");
         Faker faker = new Faker();
         String[] state = getRandomStateAndCity();
         String firstName = faker.name().firstName();
@@ -36,6 +35,8 @@ public class FormTesting {
         String hobby = getRandomHobby();
         String address = faker.address().fullAddress();
         String sub = getRandomSubject();
+
+        open("https://demoqa.com/automation-practice-form");
 
         $("#firstName").setValue(firstName);
         $("#lastName").setValue(lastName);
