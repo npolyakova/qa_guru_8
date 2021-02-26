@@ -48,7 +48,7 @@ public class FormTesting {
         $(".react-datepicker__month").$(byText(day)).click();
         $("#subjectsInput").setValue(sub).pressEnter();
         $("#hobbiesWrapper").$(byText(hobby)).click();
-        $("#uploadPicture").uploadFile(new File("C:/Users/Natalya/Pictures/1588266690127712315.jpg"));
+        //$("#uploadPicture").uploadFile(new File("C:/Users/Natalya/Pictures/1588266690127712315.jpg"));
         $("#currentAddress").setValue(address).scrollIntoView(true);
         $("#state").click();
         $("#stateCity-wrapper").$(byText(state[0])).click();
@@ -67,7 +67,7 @@ public class FormTesting {
         $(".modal-body tbody tr", 4).shouldHave(Condition.text("Date of Birth"), Condition.text(day + " " + month + "," + year));
         $(".modal-body tbody tr", 5).shouldHave(Condition.text("Subjects"), Condition.text(sub));
         $(".modal-body tbody tr", 6).shouldHave(Condition.text("Hobbies"), Condition.text(hobby));
-        $(".modal-body tbody tr", 7).shouldHave(Condition.text("Picture"), Condition.text("1588266690127712315.jpg"));
+        //$(".modal-body tbody tr", 7).shouldHave(Condition.text("Picture"), Condition.text("1588266690127712315.jpg"));
         $(".modal-body tbody tr", 8).shouldHave(Condition.text("Address"), Condition.text(address));
         $(".modal-body tbody tr", 9).shouldHave(Condition.text("State and City"), Condition.text(state[0]+" "+state[1]));
 
