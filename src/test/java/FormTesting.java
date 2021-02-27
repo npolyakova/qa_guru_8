@@ -68,7 +68,7 @@ public class FormTesting extends TestBase {
         $(".modal-body tbody tr", 4).shouldHave(Condition.text("Date of Birth"), Condition.text(day + " " + month + "," + year));
         $(".modal-body tbody tr", 5).shouldHave(Condition.text("Subjects"), Condition.text(sub));
         $(".modal-body tbody tr", 6).shouldHave(Condition.text("Hobbies"), Condition.text(hobby));
-        $(".modal-body tbody tr", 7).shouldHave(Condition.text("Picture"), Condition.text("IMG_0356.JPG"));
+        //$(".modal-body tbody tr", 7).shouldHave(Condition.text("Picture"), Condition.text("IMG_0356.JPG"));
         $(".modal-body tbody tr", 8).shouldHave(Condition.text("Address"), Condition.text(address));
         $(".modal-body tbody tr", 9).shouldHave(Condition.text("State and City"), Condition.text(state[0]+" "+state[1]));
 
