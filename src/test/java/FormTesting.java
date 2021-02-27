@@ -49,7 +49,7 @@ public class FormTesting extends TestBase {
         $(".react-datepicker__month").$(byText(day)).click();
         $("#subjectsInput").setValue(sub).pressEnter();
         $("#hobbiesWrapper").$(byText(hobby)).click();
-        $("#uploadPicture").uploadFile(new File("src/test/resources/IMG_0356.JPG"));
+        //$("#uploadPicture").uploadFile(new File("src/test/resources/IMG_0356.JPG"));
         $("#currentAddress").setValue(address).scrollIntoView(true);
         $("#state").click();
         $("#stateCity-wrapper").$(byText(state[0])).click();
