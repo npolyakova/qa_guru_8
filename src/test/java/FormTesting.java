@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static utils.RandomUtils.*;
 
-public class FormTesting {
+public class FormTesting extends TestBase {
 
     @Test //Успешное заполнение формы
     void formFillingWithCorrectData(){
